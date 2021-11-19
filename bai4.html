@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let num = +prompt("Nhập số lượng phần tử");
+    let array = new Array(num);
+    let count3 = 0;
+    let count5 = 0;
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt("Nhập giá trị");
+        if (array[i] % 3 === 0) {
+            count3++;
+        } else if (array[i] % 5 === 0) {
+            count5++;
+        } else if (array[i] % 3 !== 0 && array[i] % 5 !== 0) {
+            count++;
+        }
+    }
+    if (count3 > count5) {
+        document.write("<h1>C1021H1</h1>")
+    } else if (count5 > count3) {
+        document.write("<p><i>Hellowold</i></p>")
+    } else if (count > 0) {
+        document.write("<p><b>Codegym</b></p>")
+    }
+</script>
+</body>
+</html>

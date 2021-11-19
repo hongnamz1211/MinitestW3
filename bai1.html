@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<script>
+  let num = +prompt("Nhập số lượng phần tử")
+  let array = new Array(num);
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+      array[i] = prompt("Nhập giá trị");
+      if (array[i] % 3 === 0) {
+          count++;
+      }else {
+          console.log(-1);
+      }
+  }
+  console.log("Có " + count + " số chia hết cho 3");
+</script>
+</body>
+</html>

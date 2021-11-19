@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let num = +prompt("Nhập số lượng phần tử");
+    let array = new Array(num);
+    let count = 0;
+    let arr = prompt("Nhập giá trị 'a'");
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("Nhập giá trị");
+        if (arr === array[i]) {
+            count++;
+        }
+    }
+    console.log(count);
+    console.log(typeof arr);
+</script>
+</body>
+</html>
