@@ -8,18 +8,25 @@
 <script>
     let num = +prompt("Nhập số lượng phần tử");
     let array = new Array(num);
-    let sum = 0;
     for (let i = 0; i < array.length; i++) {
-        array[i] = +prompt("Nhập số bất kì");
+        array[i] = +prompt("Nhập số");
         console.log(array)
-            // for (let i = 1; i <= Math.sqrt(array.length) ; i++) {
-                if (array[i] % 2 !== 0 && array[i] % 3 !==0 && array[i] % 5 !== 0 && array[i] < 200 ) {
-                    console.log(array);
-                    sum += array[i];
-                }
-            // }
     }
-        console.log(sum);
+    let sum = 0;
+    function isPrime(num) {
+        if (num < 2) {
+            return false;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num) ; i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+
 </script>
 </body>
 </html>
